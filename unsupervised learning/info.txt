@@ -1,0 +1,107 @@
+🔹 Ensemble Learning Methods in AI & Machine Learning
+
+Ensemble learning is a powerful technique where multiple models (learners) are combined to solve the same problem and produce better performance than any single model alone.
+
+👉 Core idea:
+
+“Many weak learners together form a strong learner.”
+
+🎯 Why Ensemble Learning?
+
+✅ Higher accuracy
+
+✅ Reduced overfitting
+
+✅ Better generalization
+
+✅ Improved robustness
+
+🔶 Main Types of Ensemble Learning
+1️⃣ Bagging (Bootstrap Aggregating)
+
+Concept
+
+Train multiple models on different random subsets of the same dataset (sampling with replacement).
+
+Combine predictions using majority voting (classification) or averaging (regression).
+
+Goal
+👉 Reduce variance
+
+Best For
+
+High-variance models (e.g., decision trees)
+
+Key Algorithm
+
+Random Forest
+
+How it works
+
+Create multiple bootstrapped datasets
+
+Train a model on each dataset
+
+Aggregate predictions
+
+2️⃣ Boosting
+
+Concept
+
+Models are trained sequentially
+
+Each new model focuses more on the mistakes of the previous one
+
+Goal
+👉 Reduce bias
+
+Best For
+
+Weak learners that slightly outperform random guessing
+
+Popular Algorithms
+
+AdaBoost
+
+Gradient Boosting
+
+XGBoost
+
+LightGBM
+
+CatBoost
+
+How it works
+
+Train initial model
+
+Increase weight of misclassified samples
+
+Train next model on harder cases
+
+Combine all models
+
+3️⃣ Stacking (Stacked Generalization)
+
+Concept
+
+Combine different types of models
+
+Use a meta-model to learn how to best combine their predictions
+
+Goal
+👉 Learn optimal model combination
+
+Example
+
+Base models: Decision Tree, SVM, Logistic Regression
+
+Meta-model: Logistic Regression
+
+How it works
+
+Train base models
+
+Generate predictions
+
+Train meta-model on predictions
